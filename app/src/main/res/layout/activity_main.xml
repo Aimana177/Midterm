@@ -23,7 +23,7 @@
         app:menu="@menu/menu" />
 
     <SearchView
-        android:id="@+id/searsh"
+        android:id="@+id/search"
         android:layout_width="310dp"
         android:layout_height="47dp"
         android:layout_marginStart="10dp"
@@ -36,15 +36,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    /
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/man_fashion"
         android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searsh"/>
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="416dp"
@@ -119,33 +121,31 @@
         android:id="@+id/linearLayout2"
         android:layout_width="388dp"
         android:layout_height="192dp"
-        android:layout_marginStart="50dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684"><![CDATA[>
-
-        ]]>
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="333dp"
-            android:layout_height="wrap_content"
-            android:text="@string/woman_fashion"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/woman_category_2" />
-
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="@string/woman_fashion"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

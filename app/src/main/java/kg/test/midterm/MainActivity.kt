@@ -1,20 +1,15 @@
-package com.example.midterm_darina_umetalieva
+package com.example.Midterm
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.lifecycle.viewmodel.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(kg.test.midterm.R.layout.activity_main)
 
-        val imageViewView = findViewById<ImageView>(R.id.imageView9)
-
-        imageViewView.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
-            finish()
-        }
     }
 }

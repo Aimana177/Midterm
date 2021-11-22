@@ -18,6 +18,7 @@
         app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu" />
 
@@ -37,27 +38,26 @@
 
     /
 
-
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/man_fashion"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="388dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="50dp"
-        android:orientation="vertical"
+        android:layout_width="416dp"
+        android:layout_height="187dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148">>
+        app:layout_constraintVertical_bias="0.181">
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/man_fashion"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="81dp"
@@ -126,11 +126,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684">>
+        app:layout_constraintVertical_bias="0.684"><![CDATA[>
+
+        ]]>
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="match_parent"
+            android:layout_width="333dp"
             android:layout_height="wrap_content"
             android:text="@string/woman_fashion"
             android:textColor="@color/black"

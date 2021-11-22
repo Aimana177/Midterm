@@ -15,7 +15,7 @@
         app:backgroundTint="@color/white"
         app:itemBackground="@android:drawable/screen_background_light_transparent"
         app:itemRippleColor="#2196F3"
-        app:itemTextColor="@color/white"
+        app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,10 +135,16 @@
             android:text="@string/woman_fashion"
             android:textColor="@color/black"
             android:textStyle="bold" />
-    </LinearLayout>
-    <![CDATA[>
 
-    ]]>
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/woman_category_2" />
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
